@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Details</title>
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">R&F CINEMA</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="saran.html">Saran</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search movies..." onkeyup="searchMovies()">
+        </div>
+    </nav>
+
+    <!-- Movie Details Section -->
+    <section class="movie-list">
+        <!-- Movie 1 -->
+        <div class="movie" data-title="lotr">
+            <img src="https://ceritafilm.com/wp-content/uploads/2022/09/LOTR-1.jpg" alt="lotr Poster">
+            <div class="movie-info">
+                <h3>Lord Of The Rings</h3>
+                <p>228 menit</p>
+                <p><strong>Genres:</strong> Fantasy, Adventure</p>
+                <p><strong>Director:</strong> Peter Jackson</p>
+                <p><strong>Producer:</strong> Barrie M. Osborne, Fran Walsh, Peter Jackson</p>
+                <p><strong>Cast:</strong> Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom, and others.</p>
+                <button><a href="https://youtu.be/V75dMMIW2B4">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Seorang hobbit muda bernama Frodo Baggins mewarisi sebuah cincin kuno yang memiliki kekuatan besar tetapi berbahaya. Dengan bantuan para sahabatnya dan anggota Persekutuan Cincin (The Fellowship of the Ring), Frodo memulai perjalanan epik untuk menghancurkan cincin tersebut di Gunung Doom, tempat satu-satunya di mana cincin itu bisa dihancurkan. Di sepanjang perjalanan, mereka menghadapi ancaman dari pasukan kegelapan Sauron, pemilik asli cincin yang ingin kembali menguasai dunia.</p>
+            </div>
+        </div>
+
+        <div class="movie" data-title="Peter Pan">
+            <img src="https://images.harpersbazaar.co.id/unsafe/0x0/smart/media/body_9e0e092004aa4f8e8bec16963d82a9b0.jpg" alt="Peter Pan Poster">
+            <div class="movie-info">
+                <h3>Peter Pan</h3>
+                <p>113 menit</p>
+                <p><strong>Genres:</strong> Fantasy, Adventure, Family</p>
+                <p><strong>Director:</strong> P.J. Hogan</p>
+                <p><strong>Producer:</strong> Lucy Fisher, Douglas Wick, Patrick McCormick</p>
+                <p><strong>Cast:</strong> Jeremy Sumpter, Rachel Hurd-Wood, Jason Isaacs, Ludivine Sagnier, and others.</p>
+                <button><a href="https://youtu.be/kpUNUKDBhRA">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>
+                    Pada malam penuh bintang di London, Wendy Darling dan kedua adiknya, John dan Michael, dikejutkan oleh kedatangan 
+                    Peter Pan, seorang anak lelaki yang bisa terbang dan tinggal di negeri magis Neverland. Mereka mengikuti Peter Pan 
+                    bersama peri kecil Tinker Bell menuju dunia penuh petualangan, di mana mereka bertemu dengan Lost Boys, berhadapan 
+                    dengan bajak laut jahat Kapten Hook, dan mengalami pengalaman tak terlupakan yang mengajarkan mereka arti dari 
+                    keberanian, keluarga, dan kebahagiaan.
+                </p>
+            </div>
+        </div>
+
+        <div class="movie" data-title="Harry Potter and the Prisoner of Azkaban">
+            <img src="https://images-cdn.ubuy.co.id/634001c510a93c1d9b0b6ef7-harry-potter-and-the-prisoner-of-azkaban.jpg" alt="Harry Potter and the Prisoner of Azkaban Poster">
+            <div class="movie-info">
+                <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                <p>142 menit</p>
+                <p><strong>Genres:</strong> Fantasy, Adventure, Family</p>
+                <p><strong>Director:</strong> Alfonso Cuarón</p>
+                <p><strong>Producer:</strong> David Heyman, Chris Columbus, Mark Radcliffe</p>
+                <p><strong>Cast:</strong> Daniel Radcliffe, Emma Watson, Rupert Grint, Gary Oldman, and others.</p>
+                <button><a href="https://youtu.be/VwErvYgoH70">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>
+                    Dalam tahun ketiganya di Hogwarts, Harry Potter mengetahui bahwa seorang narapidana berbahaya, Sirius Black, telah 
+                    melarikan diri dari Azkaban. Sirius diyakini berencana untuk mengejar Harry, yang masih berjuang memahami warisan 
+                    masa lalunya. Bersama teman-temannya, Hermione dan Ron, Harry menghadapi Dementor yang menakutkan, pelajaran baru 
+                    yang menantang, dan rahasia besar yang dapat mengubah hidupnya selamanya.
+                </p>
+            </div>
+        </div>
+        
+        <div class="movie" data-title="The Chronicles of Narnia: The Lion, the Witch and the Wardrobe">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc0NTUwMTU5OV5BMl5BanBnXkFtZTcwNjAwNzQzMw@@._V1_.jpg" alt="Narnia Poster">
+            <div class="movie-info">
+                <h3>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h3>
+                <p>143 menit</p>
+                <p><strong>Genres:</strong> Fantasy, Adventure, Family</p>
+                <p><strong>Director:</strong> Andrew Adamson</p>
+                <p><strong>Producer:</strong> Mark Johnson, Philip Steuer</p>
+                <p><strong>Cast:</strong> Georgie Henley, Skandar Keynes, William Moseley, Anna Popplewell, and others.</p>
+                <button><a href="https://youtu.be/usEkWtuNn-w">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>
+                    Empat bersaudara Pevensie secara tidak sengaja memasuki dunia ajaib Narnia melalui sebuah lemari tua. 
+                    Di sana, mereka bertemu dengan makhluk ajaib dan bergabung dalam pertempuran epik melawan Penyihir Putih 
+                    yang kejam untuk mengembalikan kedamaian dan keadilan di tanah Narnia.
+                </p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://id-test-11.slatic.net/p/6b88d3bc9ce43fac56e57ca8e07303f3.jpg" alt="Avengers: Endgame">
+            <div class="movie-info">
+                <h3>Avengers: Endgame</h3>
+                <p>181 menit</p>
+                <p><strong>Genres:</strong> Action, Adventure, Drama</p>
+                <p><strong>Director:</strong> Anthony Russo, Joe Russo</p>
+                <p><strong>Producer:</strong> Kevin Feige</p>
+                <p><strong>Cast:</strong> Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and others.</p>
+                <button><a href="https://youtu.be/TcMBFSGVi1c">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Setelah peristiwa tragis dari Avengers: Infinity War, para pahlawan terakhir di Bumi harus mencari cara untuk membalikkan kerusakan yang telah dilakukan oleh Thanos, yang menghancurkan setengah dari seluruh kehidupan di alam semesta. Dalam perjuangan epik, mereka berusaha untuk mengumpulkan Batu-Batu Infinity dan menghadapi Thanos dalam pertempuran terakhir yang menentukan nasib dunia.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://www.cinemaonett.com/wp-content/uploads/2024/08/1meRzfWs2jiSlNcDgpCd2dcOXi7-403x598.jpg" alt="Moana 2">
+            <div class="movie-info">
+                <h3>Moana 2</h3>
+                <p>Durasi belum diumumkan</p>
+                <p><strong>Genres:</strong> Animation, Adventure, Musical</p>
+                <p><strong>Directors:</strong> David Derrick Jr., Jason Hand, Dana Ledoux Miller</p>
+                <p><strong>Producer:</strong> Christina Chen, Yvett Merino</p>
+                <p><strong>Cast:</strong> Auli‘i Cravalho, Dwayne Johnson, dan lainnya.</p>
+                <button><a href="https://youtu.be/hDZ7y8RP5HE">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Tiga tahun setelah petualangan pertama, Moana memulai perjalanan baru melintasi lautan Oseania untuk mencari peradaban yang hilang, menghadapi badai, kutukan, dan ancaman baru seperti Kakamora, sambil mengungkap rahasia leluhurnya sebagai seorang wayfinder.</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://static.wikia.nocookie.net/spidermanmoviesinfo/images/6/6c/Spider-Man_No_Way_Home_poster_3.jpg/revision/latest/scale-to-width-down/1200?cb=20220720024445" alt="Spider-Man: No Way Home">
+            <div class="movie-info">
+                <h3>Spider-Man: No Way Home</h3>
+                <p>148 menit</p>
+                <p><strong>Genres:</strong> Action, Adventure, Sci-Fi</p>
+                <p><strong>Director:</strong> Jon Watts</p>
+                <p><strong>Producer:</strong> Kevin Feige, Amy Pascal</p>
+                <p><strong>Cast:</strong> Tom Holland, Zendaya, Benedict Cumberbatch, dan lainnya.</p>
+                <button><a href="https://youtu.be/JfVOs4VSpmA">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Peter Parker meminta bantuan Doctor Strange untuk membuat identitasnya sebagai Spider-Man terlupakan. Namun, eksperimen itu menjadi kacau, dan multiverse terbuka, mendatangkan musuh dari dunia lain.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://cdn.shopify.com/s/files/1/0051/8845/2401/products/01062Frozen2_Blackstone__Rounded.png?v=1646107777" alt="Frozen II">
+            <div class="movie-info">
+                <h3>Frozen II</h3>
+                <p>103 menit</p>
+                <p><strong>Genres:</strong> Animation, Adventure, Fantasy</p>
+                <p><strong>Directors:</strong> Chris Buck, Jennifer Lee</p>
+                <p><strong>Producer:</strong> Peter Del Vecho</p>
+                <p><strong>Cast:</strong> Idina Menzel, Kristen Bell, Josh Gad, Jonathan Groff</p>
+                <button><a href="https://youtu.be/Zi4LMpSDccc">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Elsa, Anna, Kristoff, Olaf, dan Sven memulai perjalanan ke hutan ajaib untuk menemukan asal mula kekuatan Elsa dan menyelamatkan kerajaan mereka dari ancaman misterius.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://i.pinimg.com/564x/0d/4f/68/0d4f686d063d6a8d9cd3ddb13c11ed4a.jpg" alt="Avatar: The Way of Water">
+            <div class="movie-info">
+                <h3>Avatar: The Way of Water</h3>
+                <p>192 menit</p>
+                <p><strong>Genres:</strong> Action, Adventure, Sci-Fi</p>
+                <p><strong>Director:</strong> James Cameron</p>
+                <p><strong>Producer:</strong> James Cameron, Jon Landau</p>
+                <p><strong>Cast:</strong> Sam Worthington, Zoe Saldaña, Sigourney Weaver</p>
+                <button><a href="https://youtu.be/d9MyW72ELq0">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Jake Sully dan keluarganya harus meninggalkan rumah mereka dan menjelajahi wilayah perairan Pandora, menghadapi ancaman baru untuk bertahan hidup.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_.jpg" alt="The Lion King">
+            <div class="movie-info">
+                <h3>The Lion King</h3>
+                <p>118 menit</p>
+                <p><strong>Genres:</strong> Animation, Adventure, Drama</p>
+                <p><strong>Director:</strong> Jon Favreau</p>
+                <p><strong>Producer:</strong> Jon Favreau, Jeffrey Silver</p>
+                <p><strong>Cast:</strong> Donald Glover, Beyoncé, James Earl Jones</p>
+                <button><a href="https://youtu.be/qxUdkP7l_wQ">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Simba, seekor singa muda, belajar menghadapi tanggung jawab sebagai pewaris kerajaan setelah menghadapi tragedi dan pengkhianatan dalam hidupnya.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://media.suara.com/pictures/original/2022/11/09/45943-black-panther-wakanda-forever.jpg" alt="Black Panther: Wakanda Forever">
+            <div class="movie-info">
+                <h3>Black Panther: Wakanda Forever</h3>
+                <p>161 menit</p>
+                <p><strong>Genres:</strong> Action, Adventure, Drama</p>
+                <p><strong>Director:</strong> Ryan Coogler</p>
+                <p><strong>Producer:</strong> Kevin Feige, Nate Moore</p>
+                <p><strong>Cast:</strong> Letitia Wright, Lupita Nyong'o, Danai Gurira, Tenoch Huerta</p>
+                <button><a href="https://youtu.be/_Z3QKkl1WyM">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Setelah kematian Raja T'Challa, Wakanda harus menghadapi ancaman baru dari dunia luar dan negeri bawah air Talokan, sambil menjaga warisan Black Panther tetap hidup.</p>
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://static.wikia.nocookie.net/greatestmovies/images/9/93/Toy_Story_4.jpeg/revision/latest/scale-to-width-down/732?cb=20230722213109" alt="Toy Story 4">
+            <div class="movie-info">
+                <h3>Toy Story 4</h3>
+                <p>100 menit</p>
+                <p><strong>Genres:</strong> Animation, Adventure, Comedy</p>
+                <p><strong>Director:</strong> Josh Cooley</p>
+                <p><strong>Producer:</strong> Jonas Rivera, Mark Nielsen</p>
+                <p><strong>Cast:</strong> Tom Hanks, Tim Allen, Annie Potts, Tony Hale</p>
+                <button><a href="https://youtu.be/wmiIUN-7qhE">Watch Trailer</a></button>
+                <button><a href="buy.html">Buy Ticket</a></button>
+                <h4>Sinopsis</h4>
+                <p>Woody dan teman-teman mainannya memulai petualangan baru bersama Forky, sebuah mainan buatan tangan, yang membawa mereka pada perjalanan emosional dan penuh kenangan.</p>
+            </div>
+        </div>
+        
+        
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 R&F CINEMA. All rights reserved.</p>
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>

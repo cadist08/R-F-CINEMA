@@ -1,0 +1,172 @@
+/* Reset untuk memastikan tampilan konsisten */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Menghindari padding dan margin yang mengganggu layout */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/1d/30/b5/1d30b5a0c298c02edaf2f501b22a6587.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Membuat background tidak bergerak */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Menjamin bahwa body mengambil 100% dari tinggi layar */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+/* Untuk html dan body supaya tinggi 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    max-width: 100%; /* Responsif */
+}
+
+/* Container */
+.container {
+    flex: 1; /* Menyusun container agar mengambil ruang yang tersisa */
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px; /* Menambah ruang agar scrollbar tidak menutupi konten */
+}
+
+/* Showtimes Section */
+.showtimes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Membuat tombol wrap jika ruang tidak cukup */
+}
+
+.showtimes button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    width: 100%; /* Responsif untuk layar kecil */
+    max-width: 200px; /* Batas maksimal lebar tombol */
+}
+
+.showtimes button:hover {
+    background-color: #555;
+}
+
+/* Seat Selection Section */
+.seat-selection {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Responsif */
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background-color: #555;
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+/* Submit Button */
+.submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Payment Code Section */
+.payment-code {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+    margin-top: auto; /* Memastikan footer berada di bawah */
+    width: 100%;
+    position: relative;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .showtimes {
+        flex-direction: column;
+    }
+
+    .seats {
+        grid-template-columns: repeat(3, 50px); /* Kolom lebih kecil pada layar kecil */
+    }
+
+    .showtimes button {
+        width: 100%; /* Tombol mengambil seluruh lebar layar kecil */
+    }
+}

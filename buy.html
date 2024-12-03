@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Ticket</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="R&F.png" alt="Logo" class="logo">
+          <ul>
+            R&F CINEMA
+          </ul>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="saran.html">Saran</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <h1>Pilih Waktu Tayang</h1>
+        <div class="showtimes">
+            <button onclick="showSeats('19:00')">19:00</button>
+            <button onclick="showSeats('21:00')">21:00</button>
+            <button onclick="showSeats('23:00')">23:00</button>
+        </div>
+
+        <div id="seatSelection" class="seat-selection">
+            <h2>Pilih Kursi untuk Jam <span id="selectedTime"></span></h2>
+            <div class="seats">
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+                <div class="seat" onclick="selectSeat(this)"></div>
+            </div>
+            <p>Total Harga: Rp <span id="totalPrice">0</span></p>
+            <button class="submit" onclick="generatePaymentCode()">Submit</button>
+        </div>
+
+        <div id="paymentCode" class="payment-code" style="display:none;">
+            <h3>Kode Pembayaran Anda</h3>
+            <p>Gunakan kode ini untuk menyelesaikan pembayaran: <span id="code"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 R&F CINEMA. All rights reserved.</p>
+      </footer>
+
+    <script src="script_1.js"></script>
+</body>
+</html>
