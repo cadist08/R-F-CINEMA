@@ -1,92 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Ticket</title>
-    <link rel="stylesheet" href="buy.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Kursi Bioskop</title>
+  <link rel="stylesheet" href="buy.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="R&F.png" alt="Logo" class="logo">
-          <ul>
-            R&F CINEMA
-          </ul>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="film.html">Film</a></li>
-            <li><a href="saran.html">Saran</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar">
+        <img src="R&F.png" alt="Logo" class="logo">
+      <ul>
+        R&F CINEMA
+      </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="film.html">Film</a></li>
+        <li><a href="saran.html">Saran</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-        <h1>Pilih Waktu Tayang</h1>
-        <div class="showtimes">
-            <button onclick="showSeats('19:00')">19:00</button>
-            <button onclick="showSeats('21:00')">21:00</button>
-            <button onclick="showSeats('23:00')">23:00</button>
-        </div>
-
-        <div id="seatSelection" class="seat-selection">
-            <h2>Pilih Kursi untuk Jam <span id="selectedTime"></span></h2>
-            <div class="seats">
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-                <div class="seat" onclick="selectSeat(this)"></div>
-            </div>
-            <p>Total Harga: Rp <span id="totalPrice">0</span></p>
-            <button class="submit" onclick="generatePaymentCode()">Submit</button>
-        </div>
-
-        <div id="paymentCode" class="payment-code" style="display:none;">
-            <h3>Kode Pembayaran Anda</h3>
-            <p>Gunakan kode ini untuk menyelesaikan pembayaran: <span id="code"></span></p>
-        </div>
+  <h1>Pilih Kursi Anda</h1>
+  
+  <div class="time-selection">
+    <label for="showtime">Pilih Jam Tayang:</label>
+    <select id="showtime">
+      <option value="10:00">10:00</option>
+      <option value="13:00">13:00</option>
+      <option value="16:00">16:00</option>
+      <option value="19:00">19:00</option>
+    </select>
+  </div>
+  
+  <div class="screen">Layar</div>
+  
+  <div class="seats-container">
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
     </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 R&F CINEMA. All rights reserved.</p>
-      </footer>
+  <p id="selected-seats">Kursi dipilih: 0</p>
+  <p id="total-price">Total Harga: Rp 0</p>
+  <button id="pay-button">Bayar Sekarang</button>
 
-    <script src="script_1.js"></script>
+  <div id="payment-confirmation" class="hidden">
+    <p>Terima kasih! Pembayaran berhasil untuk jam <span id="selected-time"></span>.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 R&F CINEMA. All rights reserved.</p>
+  </footer>
+
+  <script src="script_1.js"></script>
 </body>
 </html>
